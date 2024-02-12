@@ -1,5 +1,10 @@
 import streamlit as st
 
+
+# Configuración de la página para centrar la interfaz
+st.set_page_config(layout="centered")
+
+
 def conversiones_temperatura(valor, tipo_conversion):
     if tipo_conversion == "Celsius a Fahrenheit":
         return valor * 9/5 + 32
